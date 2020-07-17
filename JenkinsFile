@@ -1,0 +1,6 @@
+node {
+  stage 'checkout'
+    git 'https://github.com/ksurma-test/test-pipeline.git'
+  stage 'build'
+    bat 'mvn clean install'
+}
